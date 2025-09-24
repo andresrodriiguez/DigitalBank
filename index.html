@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Digital Bank — Abre tu cuenta</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="siteHeader">
+    <div class="container headerInner">
+      <div class="logoBox">
+        <strong>Digital</strong> Bank
+      </div>
+      <nav class="mainNav">
+        <a href="#heroSection">Inicio</a>
+        <a href="#beneficiosSection">Beneficios</a>
+        <a href="#testimoniosSection">Testimonios</a>
+        <a href="#contactoSection">Contacto</a>
+      </nav>
+      <button class="hamburgerBtn" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="heroSection" class="heroSection">
+    <div class="heroOverlay"></div>
+    <div class="heroContent">
+      <h1>Abre tu Cuenta Digital en Minutos</h1>
+      <p class="subtitleText">Sin comisiones, 100% online</p>
+      <button id="ctaBtn" class="ctaBtn">¡Quiero mi cuenta!</button>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficiosSection" class="sectionBox">
+    <h2>Beneficios</h2>
+    <div class="cardContainer">
+      <div class="cardBox">
+        <h3>Sin Comisiones</h3>
+        <p>Abre tu cuenta y olvídate de pagar comisiones ocultas.</p>
+      </div>
+      <div class="cardBox">
+        <h3>100% Online</h3>
+        <p>Haz todas tus gestiones desde la app o la web.</p>
+      </div>
+      <div class="cardBox">
+        <h3>Seguridad Total</h3>
+        <p>Protegemos tu dinero con la última tecnología bancaria.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimoniosSection" class="sectionBox">
+    <h2>Testimonios</h2>
+    <div class="cardContainer">
+      <div class="cardBox">
+        <p>"Abrí mi cuenta en 5 minutos y sin papeleo. ¡Muy fácil!"</p>
+        <strong>- María G.</strong>
+      </div>
+      <div class="cardBox">
+        <p>"Lo mejor es que no tengo que ir nunca a una oficina."</p>
+        <strong>- Juan P.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contactoSection" class="sectionBox">
+    <h2>Contacto</h2>
+    <form id="contactForm" class="contactForm">
+      <input id="nameInput" type="text" placeholder="Tu nombre *" required>
+      <div id="nameError" class="errorMsg"></div>
+
+      <input id="emailInput" type="email" placeholder="Tu email *" required>
+      <div id="emailError" class="errorMsg"></div>
+
+      <textarea placeholder="Tu mensaje"></textarea>
+
+      <button type="submit">Enviar</button>
+      <div id="formSuccess" class="successMsg"></div>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="siteFooter">
+    <div class="container footerInner">
+      <div>
+        <p><strong>Digital Bank</strong> — Contacto: contacto@digitalbank.es</p>
+        <p>Tel: +34 900 000 000</p>
+      </div>
+      <div class="socialLinks">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
