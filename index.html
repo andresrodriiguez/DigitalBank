@@ -7,14 +7,17 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
 </head>
 <body>
   <!-- HEADER -->
   <header class="siteHeader">
     <div class="container headerInner">
       <div class="logoBox">
-        <strong>Digital</strong> Bank
+        <img src="./assets/logos.png" alt="Digital Bank logo" class="logoFull">
       </div>
+
       <nav class="mainNav">
         <a href="#heroSection">Inicio</a>
         <a href="#beneficiosSection">Beneficios</a>
@@ -27,13 +30,18 @@
 
   <!-- HERO -->
   <section id="heroSection" class="heroSection">
-    <div class="heroOverlay"></div>
+    <div class="heroOverlay">
+      <img src="./assets/background1.jpg" class="activo" alt="Fondo 1">
+      <img src="./assets/background2.jpg" alt="Fondo 2">
+      <img src="./assets/background3.jpg" alt="Fondo 3">
+    </div>
     <div class="heroContent">
       <h1>Abre tu Cuenta Digital en Minutos</h1>
       <p class="subtitleText">Sin comisiones, 100% online</p>
       <button id="ctaBtn" class="ctaBtn">¡Quiero mi cuenta!</button>
     </div>
   </section>
+
 
   <!-- BENEFICIOS -->
   <section id="beneficiosSection" class="sectionBox">
@@ -88,17 +96,23 @@
 
   <!-- FOOTER -->
   <footer class="siteFooter">
-    <div class="container footerInner">
-      <div>
-        <p><strong>Digital Bank</strong> — Contacto: contacto@digitalbank.es</p>
-        <p>Tel: +34 900 000 000</p>
-      </div>
-      <div class="socialLinks">
-        <a href="#" aria-label="Twitter">Twitter</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a href="#" aria-label="Instagram">Instagram</a>
-      </div>
+  <div class="container footerInner">
+    <p>&copy; 2025 Digital Bank. Todos los derechos reservados.</p>
+    <div class="socialLinks">
+
+      <a href="#" target="_blank" aria-label="X (Twitter)">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+
+      <a href="#" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+
+      <a href="#" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
     </div>
+  </div>
   </footer>
 
   <script src="scripts.js"></script>

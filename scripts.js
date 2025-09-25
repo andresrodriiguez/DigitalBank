@@ -99,4 +99,15 @@ document.addEventListener('DOMContentLoaded', () => {
   navMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
     if (window.innerWidth <= 700) navMenu.style.display = '';
   }));
+
+  // --- Carrusel en hero ---
+  const heroImages = document.querySelectorAll('.heroOverlay img');
+  if (heroImages.length > 0) {
+    let heroIndex = 0;
+    setInterval(() => {
+      heroImages[heroIndex].classList.remove('activo');
+      heroIndex = (heroIndex + 1) % heroImages.length;
+      heroImages[heroIndex].classList.add('activo');
+    }, 5000); // cada 5s
+  }
 });
